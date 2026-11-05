@@ -34,7 +34,7 @@ export default function HomePage() {
 
       <section id="home" className="hero">
         <p className="eyebrow">LAB 1 · AI-ASSISTED DEVELOPMENT</p>
-        <h1>Find your place in the neighborhood.</h1>
+        <h1>Welcome to Our Neighborhood Listing Platform!</h1>
         <p className="hero-description">
           A welcoming starting point for exploring homes, supporting local businesses,
           and imagining easier ways to search.
