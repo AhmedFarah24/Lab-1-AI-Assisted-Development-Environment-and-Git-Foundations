@@ -1,38 +1,33 @@
+
+@import "tailwindcss";
+
 :root {
   color-scheme: light;
-  --ink: #172d33;
-  --muted: #53666b;
-  --accent: #116b61;
-  --surface: #ffffff;
-  --background: #f5f8f6;
 }
-* { box-sizing: border-box; }
-html { scroll-behavior: smooth; }
-body { margin: 0; font-family: Arial, Helvetica, sans-serif; background: var(--background); color: var(--ink); line-height: 1.6; }
-a { color: inherit; }
-.site-header { display: flex; justify-content: space-between; align-items: center; gap: 1rem; padding: 1.25rem clamp(1.25rem, 5vw, 5rem); background: white; }
-.logo { text-decoration: none; font-size: 1.3rem; font-weight: 800; }
-.logo span { color: var(--accent); font-size: 1.75rem; }
-nav { display: flex; gap: 1.5rem; }
-nav a { text-decoration: none; font-weight: 600; }
-nav a:hover, nav a:focus-visible { color: var(--accent); text-decoration: underline; }
-.hero { padding: 7rem 1.5rem; text-align: center; background: linear-gradient(135deg, #e2f2e9, #f3faf7 60%, #e5efef); }
-.eyebrow { text-transform: uppercase; letter-spacing: .17em; color: var(--accent); font-size: .76rem; font-weight: 800; }
-h1 { font-size: clamp(2.6rem, 6vw, 4.6rem); line-height: 1.12; letter-spacing: -.04em; max-width: 800px; margin: 1rem auto; }
-.hero-description { max-width: 640px; margin: 0 auto 2rem; color: var(--muted); font-size: 1.12rem; }
-.primary-button { display: inline-block; background: var(--accent); color: white; border-radius: .7rem; padding: .85rem 1.5rem; text-decoration: none; font-weight: 700; }
-.primary-button:hover, .primary-button:focus-visible { background: #0b4e47; }
-.features, .about { max-width: 1160px; margin: auto; padding: 5rem 1.5rem; }
-.features h2, .about h2 { font-size: clamp(1.8rem, 4vw, 2.65rem); line-height: 1.2; max-width: 650px; }
-.feature-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.25rem; margin-top: 2.5rem; }
-.feature-card { border: 1px solid #dce7e3; background: var(--surface); border-radius: 1rem; padding: 2rem; box-shadow: 0 10px 22px #183c3210; }
-.feature-icon { display: grid; place-items: center; width: 3.25rem; height: 3.25rem; background: #e0f3ea; border-radius: .75rem; color: var(--accent); font-size: 2rem; }
-.feature-card h3 { font-size: 1.3rem; margin: 1.5rem 0 .5rem; }
-.feature-card p, .about p { color: var(--muted); }
-.feature-label { display: inline-block; margin-top: 1rem; color: var(--accent); font-weight: 700; }
-.about { border-top: 1px solid #dce7e3; }
-.about p { max-width: 700px; }
-.about .team { font-weight: 700; color: var(--ink); }
-.footer { text-align: center; padding: 2rem; background: #173e39; color: white; }
-:focus-visible { outline: 3px solid #e49b36; outline-offset: 3px; }
-@media (max-width: 740px) { .site-header { flex-wrap: wrap; } .hero { padding: 5rem 1.25rem; } .feature-grid { grid-template-columns: 1fr; } }
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: #f8fafc;
+  color: #111827;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+button,
+select,
+input {
+  font: inherit;
+}
+
+:focus-visible {
+  outline: 3px solid #2563eb;
+  outline-offset: 3px;
+}
